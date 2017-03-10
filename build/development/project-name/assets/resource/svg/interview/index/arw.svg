@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="4" height="7" viewBox="0 0 4 7">
+  <defs>
+    <style>
+      .cls-1 {
+        <!-- fill-rule: evenodd; -->
+      }
+    </style>
+  </defs>
+  <path id="arw02.svg" class="cls-1" d="M154,200l-4,3v-7l4,3v1Z" transform="translate(-150 -196)"/>
+</svg>
