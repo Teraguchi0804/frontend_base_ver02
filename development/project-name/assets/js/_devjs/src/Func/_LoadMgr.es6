@@ -10,9 +10,8 @@ export default class LoadMgr {
 
   constructor() {
 
-    this.section01BgVideo();
-    this.section02Youtube();
-
+    // this.section01BgVideo();
+    // this.section02Youtube();
   }
 
   // section01の背景動画

@@ -19,12 +19,12 @@ export default class LoadMgr {
     // ソーシャルスクリプトなど
     // this.snsScript();
 
-    this.loadYoutubeScript();
+    // this.loadYoutubeScript();
 
     // section02で使う大量の画像をロード // web workerなども使って
-    this.sec02Img();
+    // this.sec02Img();
 
-    this.webFont();
+    // this.webFont();
 
   }
 

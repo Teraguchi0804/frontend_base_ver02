@@ -36,29 +36,29 @@ export default class Main {
 
         break;
 
-      case 'movie':
-        
-        new DisplayMovie();
-
-        break;
-
-      case 'interview':
-        
-        new DisplayInterview();
-
-        break;
-
-      case 'interview_detail':
-        
-        new DisplayInterviewDetail();
-
-        break;
-
-      case 'history':
-        
-        new DisplayHistory();
-
-        break;
+      // case 'movie':
+      //
+      //   new DisplayMovie();
+			//
+      //   break;
+			//
+      // case 'interview':
+      //
+      //   new DisplayInterview();
+			//
+      //   break;
+			//
+      // case 'interview_detail':
+      //
+      //   new DisplayInterviewDetail();
+			//
+      //   break;
+			//
+      // case 'history':
+      //
+      //   new DisplayHistory();
+			//
+      //   break;
 
     }
 
