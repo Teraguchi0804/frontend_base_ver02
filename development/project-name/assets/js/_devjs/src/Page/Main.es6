@@ -26,6 +26,7 @@ export default class Main {
 
   onReady() {
 
+    //pageページ別のIDを取得
     var page = $('body').data('id');
 
     switch (page) {
