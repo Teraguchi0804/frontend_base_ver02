@@ -5,10 +5,10 @@
 //--------------------------------------------------
 
 import DisplayTop from '../Display/DisplayTop.es6';
-import DisplayMovie from '../Display/DisplayMovie.es6';
-import DisplayInterview from '../Display/DisplayInterview.es6';
-import DisplayInterviewDetail from '../Display/DisplayInterviewDetail.es6';
-import DisplayHistory from '../Display/DisplayHistory.es6';
+// import DisplayMovie from '../Display/DisplayMovie.es6';
+// import DisplayInterview from '../Display/DisplayInterview.es6';
+// import DisplayInterviewDetail from '../Display/DisplayInterviewDetail.es6';
+// import DisplayHistory from '../Display/DisplayHistory.es6';
 
 export default class Main {
 
@@ -29,6 +29,7 @@ export default class Main {
     //pageページ別のIDを取得
     var page = $('body').data('id');
 
+		//pageのIDごとに発火するクラスの振り分け
     switch (page) {
 
       case 'top':
