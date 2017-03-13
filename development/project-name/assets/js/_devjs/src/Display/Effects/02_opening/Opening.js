@@ -6,7 +6,7 @@
 
 (function(){
 
-  var gb = jp.co.mie
+  var gb = jp.co.mie;
 
   function Opening() {
 
