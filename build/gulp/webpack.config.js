@@ -1,4 +1,5 @@
 const path = require('path');
+const fallbackDirPath = path.join(__dirname, 'node_modules');
 const PATH = require('./config');
 
 module.exports = {
@@ -12,21 +13,32 @@ module.exports = {
         filename: "[name].js"
     },
     module: {
-        loaders: [
+			  rules: [
             // { test: /\.css$/, loader: "style!css" },
             {
               test: [/\.js$/,/\.es6$/],
               exclude: /(node_modules|bower_components)/,
-              loader: 'babel-loader', // 'babel-loader' is also a legal name to reference
-              query: {
-                presets: ["babel-preset-es2015", "babel-preset-es2016", "babel-preset-es2017"].map(require.resolve)
-              }
+							use: 'babel-loader', // 'babel-loader' is also a legal name to reference
+							// options: {
+              //   // presets: ["babel-preset-es2015", "babel-preset-es2016", "babel-preset-es2017"].map(require.resolve)
+              //   presets: ["babel-preset-es2015", "babel-preset-es2016", "babel-preset-es2017"]
+              // }
             }
         ]
     },
-    resolveLoader: {
-      root: path.join(__dirname, 'node_modules')
-    },
+    // resolveLoader: {
+		// resolveLoader: {
+    // 	moduleExtensions: ["-loader"]
+    // },
+    // resolve: {
+			// // moduleExtensions: ["-loader"],
+    //   // root: path.join(__dirname, 'node_modules')
+			// // fallback: fallbackDirPath
+			// modules: [
+			// 	path.join(__dirname, "./"),
+			// 	 "node_modules"
+			// 	]
+    // },
     // devtool: 'source-map',
     devtool: 'inline-source-map',
 };

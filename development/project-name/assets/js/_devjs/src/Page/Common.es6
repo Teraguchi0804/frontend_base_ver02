@@ -132,7 +132,7 @@ export default class Common {
     gb.in.he08 = new HoverEffectSNSPCFooter($('#sideL .sns.sp'));
 
     // logo 出す
-    TweenMax.to($('#header .logo'), 2.2, {opacity: 1, ease: Power2.easeInOut})
+    // TweenMax.to($('#header .logo'), 2.2, {opacity: 1, ease: Power2.easeInOut})
 
     gb.in.loadMgr.start();
 

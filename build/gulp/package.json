@@ -20,7 +20,7 @@
     "browser-sync": "^2.7.13",
     "browsersync-ssi": "^0.2.4",
     "concat-with-sourcemaps": "^1.0.4",
-    "gulp": "^3.8.11",
+    "gulp": "^3.9.1",
     "gulp-autoprefixer": "^3.1.0",
     "gulp-babel": "^6.1.2",
     "gulp-cached": "^1.1.0",
@@ -61,7 +61,7 @@
     "imagemin-pngquant": "^4.2.2",
     "jpegtran-bin": "^3.1.0",
     "js-doc": "^0.4.2",
-    "jsdoc": "^3.4.0",
+    "jsdoc": "^3.4.3",
     "json-loader": "^0.5.4",
     "object-assign": "^4.1.0",
     "optipng": "^1.0.0",
@@ -70,7 +70,7 @@
     "require-dir": "^0.3.0",
     "run-sequence": "^1.1.5",
     "streamqueue": "^1.1.1",
-    "webpack": "^1.13.2",
+    "webpack": "^2.2.1",
     "webpack-stream": "^3.2.0"
   },
   "dependencies": {
