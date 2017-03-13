@@ -2,7 +2,8 @@
 var PROJECT_ROOT = '../../';
 
 var DEV = 'development/project-name/';
-var RELEASE = 'release/';
+// var RELEASE = 'release/';
+var RELEASE = 'htdocs/project-name/';
 var BUILD = 'build/';
 
 var DEVPATH = {
