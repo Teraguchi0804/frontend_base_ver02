@@ -4,7 +4,7 @@
 //
 // ------------------------------------------------------------
 
-import metaData from "json-loader!../../../../ejs/inc/metaData.json";
+// import metaData from "json-loader!../../../../ejs/inc/metaData.json";
 
 export default class Sns {
 

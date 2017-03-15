@@ -21,7 +21,7 @@ export default class Main {
 
   onImmediate() {
 
-    
+    window.console.log('test');
   }
 
   onReady() {
