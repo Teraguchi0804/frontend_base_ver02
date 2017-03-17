@@ -1,8 +1,10 @@
-//--------------------------------------------------
-//
-//  PageScroll
-//
-//--------------------------------------------------
+/**
+ * fileOverview: ページ内のアンカースクロールイベント系
+ * Project:
+ * File: PageScroll
+ * Date:
+ * Author:
+ */
 
 export default class PageScroll {
 
@@ -11,14 +13,16 @@ export default class PageScroll {
     this.cb = function(){};
     this.onComplete = function(){};
 
+    this.testAlert = this._testAlert.bind(this);
 
     this.setEvents();
-    this.ready();
+    this.setup();
 
   }
 
-  ready() {
-
+  setup() {
+    
+    this.testAlert();
 
   }
 
@@ -39,6 +43,10 @@ export default class PageScroll {
 
     return false;
 
+  }
+  
+  _testAlert (){
+    // window.console.log('testAlert!!!');
   }
 
   pageScrollTo(that) {

@@ -9,6 +9,8 @@ import HoverEffectSNSSPFooter from '../Display/Effects/03_effects/HoverEffectSNS
 import HoverEffectSVGArrowTop from '../Display/Effects/03_effects/HoverEffectSVGArrowTop.es6';
 import TopTime from '../Display/UI/TopTime.es6';
 import Position from './Layout/Postion/Position.es6';
+import PageScroll from './UI/_parts/PageScroll.es6';
+
 
 export default class DisplayTop {
 
@@ -27,6 +29,8 @@ export default class DisplayTop {
   }
 
   onLoad() {
+
+    gb.in.pageScroll = new PageScroll();
 
     // ------------------------------------------------------------
     //  UI / Layout

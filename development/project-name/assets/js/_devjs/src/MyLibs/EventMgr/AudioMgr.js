@@ -6,7 +6,7 @@
 
 (function(){
 
-  var gb = jp.co.onepieace
+  var gb = jp.co.onepieace;
 
   function AudioMgr(src) {
 

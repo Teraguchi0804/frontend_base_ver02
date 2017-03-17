@@ -6,7 +6,7 @@
 
 (function(){
 
-  var gb = jp.co.plusMV
+  var gb = jp.co.plusMV;
 
   function EventMgr() {
 
