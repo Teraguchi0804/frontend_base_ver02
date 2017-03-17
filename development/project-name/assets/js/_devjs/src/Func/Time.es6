@@ -82,8 +82,7 @@ export default class Time {
   }
        
   setEvents() {
-
-
+    
     // gb.in.up.add(this.update.bind(this));
 
   }
