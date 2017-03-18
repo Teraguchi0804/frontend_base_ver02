@@ -302,5 +302,5 @@ export default class PubSub {
 	dispatch() {
 		this.dispatchEvent.apply(this, arguments);
 	}
-	
+
 };
