@@ -32,7 +32,7 @@ export default class DisplayTop {
 
   onLoad() {
 
-    gb.in.webGLinit = new WebGLinit();
+    // gb.in.webGLinit = new WebGLinit();
 
     // ------------------------------------------------------------
     //  UI / Layout

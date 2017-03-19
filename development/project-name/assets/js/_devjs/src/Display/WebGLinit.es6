@@ -56,20 +56,20 @@ export default class WebGLinit {
 		this.gl.clear(this.gl.COLOR_BUFFER_BIT | this.gl.DEPTH_BUFFER_BIT);
 
 		// 頂点シェーダとフラグメントシェーダの生成
-		var v_shader = this.create_shader('vs');
-		var f_shader = this.create_shader('fs');
+		let v_shader = this.create_shader('vs');
+		let f_shader = this.create_shader('fs');
 
 		// プログラムオブジェクトの生成とリンク
-		var prg = this.create_program(v_shader, f_shader);
+		let prg = this.create_program(v_shader, f_shader);
 
 		// attributeLocationの取得
-		var attLocation = this.gl.getAttribLocation(prg, 'position');
+		let attLocation = this.gl.getAttribLocation(prg, 'position');
 
 		// attributeの要素数(この場合は xyz の3要素)
-		var attStride = 3;
+		let attStride = 3;
 
 		// モデル(頂点)データ
-		var vertex_position = [
+		let vertex_position = [
 			0.0, 1.0, 0.0,
 			1.0, 0.0, 0.0,
 			-1.0, 0.0, 0.0
