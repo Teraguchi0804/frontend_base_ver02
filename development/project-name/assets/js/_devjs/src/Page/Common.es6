@@ -1,3 +1,11 @@
+/**
+ * fileOverview:
+ * Project:
+ * File: Common
+ * Date:
+ * Author:
+ */
+
 import Conf from '../Conf.es6';
 import Util from '../MyLibs/Util.es6';
 import Func from '../MyLibs/Func.es6';
@@ -15,6 +23,7 @@ import ResponsiveSwitchImg from '../Func/_events/ResponsiveSwitchImg.es6';
 import SwipeTransition from '../Func/SwipeTransition.es6';
 
 import Menu from '../Display/UI/_compornents/Menu.es6';
+// import Nav from '../Display/UI/Nav.es6';
 import Alert from '../Display/UI/Alert.es6';
 import SideR from '../Display/UI/SideR.es6';
 import Time from '../Func/Time.es6';
@@ -23,7 +32,7 @@ import PageTop from '../Display/UI/_parts/PageTop.es6';
 import Sec01Video from '../Display/UI/Sec01Video.es6';
 import Sns from '../Func/Sns.es6';
 import SliderTop from '../Display/UI/SliderTop.es6';
-import Nav from '../Display/UI/Nav.es6';
+
 
 import Layout from '../Display/Layout/Layout.es6';
 
@@ -38,11 +47,7 @@ import HoverEffectSNSPCFooter from '../Display/Effects/03_effects/HoverEffectSNS
 import HoverEffectSVGArrowSideR from '../Display/Effects/03_effects/HoverEffectSVGArrowSideR.es6';
 // import HoverEffectMenuItem from '../Display/Effects/03_effects/HoverEffectMenuItem.es6';
 
-//--------------------------------------------------
-//
-//  main
-//
-//--------------------------------------------------
+
 export default class Common {
 
   constructor() {
@@ -76,7 +81,7 @@ export default class Common {
     //
     // ------------------------------------------------------------
     // pjaxの設定
-    gb.in.pjax = new Pjax();
+    // gb.in.pjax = new Pjax();
 
     // ------------------------------------------------------------
     //  Layout
@@ -106,11 +111,11 @@ export default class Common {
     // ------------------------------------------------------------
     //  UI
     // ------------------------------------------------------------
-    gb.in.menu = new Menu();
-    gb.in.nav = new Nav();
-    gb.in.sideR = new SideR();
-    gb.in.alert = new Alert();
-    gb.in.pagetop = new PageTop();
+    // gb.in.menu = new Menu();
+    // gb.in.nav = new Nav();
+    // gb.in.sideR = new SideR();
+    // gb.in.alert = new Alert();
+    // gb.in.pagetop = new PageTop();
 
     // bg
     gb.in.sliderTop = new SliderTop($('#bgWrap .sec01'));

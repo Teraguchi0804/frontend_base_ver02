@@ -2,7 +2,7 @@
 <!DOCTYPE html>
 <html lang="ja">
 <head>
-<!-- ************************************************************
+    <!-- ************************************************************
 //
 //  meta
 //
@@ -30,21 +30,53 @@
 <meta name="twitter:title" content="" class="twTit">
 <meta name="twitter:description" content="ダミーダミーダミーダミーダミーダミーダミー" class="twDes">
 <meta name="twitter:image" content="" class="twImg">
-<!-- ************************************************************
+    <!-- ************************************************************
 //
 //  style sheet
 //
 // ************************************************************ -->
 <link href="https://fonts.googleapis.com/css?family=Cormorant:500,500i|Roboto+Condensed" rel="stylesheet">
 <script type='text/javascript'>var _sf_startpt=(new Date()).getTime()</script>
-<link href="/project-name/assets/css/top/style.css" rel="stylesheet" class="stylesheet">
-<!-- ************************************************************
+    <link href="/project-name/assets/css/top/style.css" rel="stylesheet" class="stylesheet">
+    <!-- ************************************************************
 //
 //  script
 //
 // ************************************************************ -->
 <script type='text/javascript' src='/project-name/assets/js/common/libs.js'></script>
-<script type='text/javascript' src='/project-name/assets/js/main.js'></script>
+    <script type='text/javascript' src='/project-name/assets/js/main.js'></script>
+
+    <script>
+//        onload = function(){
+//            // canvasエレメントを取得
+//            var c = document.getElementById('canvas');
+//            c.width = 500;
+//            c.height = 300;
+//
+//            // webglコンテキストを取得
+//            var gl = c.getContext('webgl') || c.getContext('experimental-webgl');
+//
+//            // canvasを黒でクリア(初期化)する
+//            gl.clearColor(0.0, 0.0, 0.0, 1.0);
+//            gl.clear(gl.COLOR_BUFFER_BIT);
+//        };
+    </script>
+
+    <script id="vs" type="x-shader/x-vertex">
+attribute vec3 position;
+uniform   mat4 mvpMatrix;
+
+void main(void){
+    gl_Position = mvpMatrix * vec4(position, 1.0);
+}
+        </script>
+
+    <script id="fs" type="x-shader/x-fragment">
+void main(void){
+    gl_FragColor = vec4(1.0, 1.0, 1.0, 1.0);
+}
+        </script>
+
 </head>
 <body id="top" class="top" data-id="top">
 <!-- ************************************************************
@@ -96,59 +128,15 @@
 
 
 <div id="wrapper">
-<div id="inner">
+    <div id="inner">
 
-  <div class="section section01" data-id="top">
+        <div class="section section01" data-id="top">
 
-  <!-- ************************************************************
-  //  titWrap
-  // ************************************************************ -->
-  <div class="titWrap">
-    <!--<img src="/project-name/assets/resource/svg/logo01.svg" alt="">-->
-    <!--<img src="/project-name/assets/resource/svg/logo02.svg" alt="">-->
-    <!-- <p class="text text01">with Tiffany East West watch</p>
-    <p class="text text02">
-      TIFFANY & Co.&nbsp;&nbsp;&nbsp;<img src="/project-name/assets/resource/svg/x.svg" alt="">&nbsp;&nbsp;&nbsp;madame FIGARO.jp
-    </p> -->
-    <p class="text text01">
-      <!--<img src="/project-name/assets/resource/img/top/text01_pc.png" alt="" class="responsiveImg spSize">-->
-    </p>
-    
-  </div>
-
-  <!-- ************************************************************
-  //  time
-  // ************************************************************ -->
-  <div class="timeWrap">
-
-    <div class="textWrap">
-
-      <p class="text">
-        NY TIME 
-      </p>
-
-      <p class="time"><span class="h01">1</span><span class="h02">6</span>&nbsp;<span class="colon">:</span>&nbsp;<span class="m01">3</span><span class="m02">0</span></p>
-
-    </div>
-
-  </div>
-
-
-  <!-- ************************************************************
-  //  next
-  // ************************************************************ -->
-  <a href="/movie/" class="pjax">
-    <div class="next">
-      <p class="text">Movie</p>
-      <!-- <div class="bar"></div> -->
-      
-      
-    </div>
-  </a>
+  <canvas id="canvas"></canvas>
 
 </div>
 
-</div>
+    </div>
 </div>
 
 <!-- ************************************************************

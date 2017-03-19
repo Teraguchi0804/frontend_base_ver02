@@ -9,8 +9,9 @@ import HoverEffectSNSSPFooter from '../Display/Effects/03_effects/HoverEffectSNS
 import HoverEffectSVGArrowTop from '../Display/Effects/03_effects/HoverEffectSVGArrowTop.es6';
 import TopTime from '../Display/UI/TopTime.es6';
 import Position from './Layout/Postion/Position.es6';
-import PageScroll from './UI/_parts/PageScroll.es6';
+import WebGLinit from './WebGLinit.es6';
 
+'use strict';
 
 export default class DisplayTop {
 
@@ -23,29 +24,30 @@ export default class DisplayTop {
 
   onImmediate() {
 
+
     // ループスタート
-    gb.in.up.loop();
+    // gb.in.up.loop();
     
   }
 
   onLoad() {
 
-    gb.in.pageScroll = new PageScroll();
+    gb.in.webGLinit = new WebGLinit();
 
     // ------------------------------------------------------------
     //  UI / Layout
     // ------------------------------------------------------------
     // sp
-    gb.in.scaleTop = new ScaleTop();
-    gb.in.pos = new Position();
+    // gb.in.scaleTop = new ScaleTop();
+    // gb.in.pos = new Position();
 
     // ------------------------------------------------------------
     //  Effects
     // ------------------------------------------------------------
 
     // sp
-    gb.in.sliderTop.setEvents();
-    gb.in.snsSPHoverEf = new HoverEffectSNSSPFooter($('#sideL'));
+    // gb.in.sliderTop.setEvents();
+    // gb.in.snsSPHoverEf = new HoverEffectSNSSPFooter($('#sideL'));
 
     // pc
     // new HoverEffectSVGArrowTop($('.section01 .next')); // → TopOpeningへ
@@ -53,6 +55,8 @@ export default class DisplayTop {
   }
 
   static run() {
+
+		window.console.log('static_Run');
 
     // ------------------------------------------------------------
     //  UI / Layout

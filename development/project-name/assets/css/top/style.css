@@ -217,8 +217,6 @@ body.interview #bgWrap .block .ul .item .titWrap02 .name,
 body.interview #bgWrap .textWrap_pc,
 #sideR,
 .videoUI .details,
-#top .section01 .titWrap .text,
-#top .section01 .timeWrap,
 #top .section02 .textWrap > .tit,
 #top .section02 .textWrap .details,
 #top .section02 .indicator,
@@ -260,7 +258,6 @@ body.interview_detail #sideR .back,
 #sideR .back,
 #sideR .next,
 .videoUI .credit,
-#top .section01 .next .text,
 #top .section02 .textWrap .play,
 #top .section02 .next .text,
 #top .section03 .box02 .titWrap .numWrap,
@@ -309,7 +306,7 @@ html
     letter-spacing: 0;
 
     color: #000;
-    background-color: #000;
+    background-color: #fff;
 
     -webkit-text-size-adjust: 100%;
         -ms-text-size-adjust: 100%;
@@ -500,8 +497,6 @@ body.interview #bgWrap .block .ul .item .titWrap02 .name,
 body.interview #bgWrap .textWrap_pc,
 #sideR,
 .videoUI .details,
-#top .section01 .titWrap .text,
-#top .section01 .timeWrap,
 #top .section02 .textWrap > .tit,
 #top .section02 .textWrap .details,
 #top .section02 .indicator,
@@ -543,7 +538,6 @@ body.interview_detail #sideR .back,
 #sideR .back,
 #sideR .next,
 .videoUI .credit,
-#top .section01 .next .text,
 #top .section02 .textWrap .play,
 #top .section02 .next .text,
 #top .section03 .box02 .titWrap .numWrap,
@@ -592,7 +586,7 @@ html
     letter-spacing: 0;
 
     color: #000;
-    background-color: #000;
+    background-color: #fff;
 
     -webkit-text-size-adjust: 100%;
         -ms-text-size-adjust: 100%;
@@ -7202,140 +7196,11 @@ body.top #sideR .tit
     }
 }
 
-#top .section
-{
-    position: absolute;
-    top: 0;
-    left: 0;
-
-    width: 100%;
-    height: 100%;
-}
-
 /* --------------------------------------------------------------------------------
 *
 *   section01
 *
 -------------------------------------------------------------------------------- */
-#top .section01
-{
-    overflow: hidden;
-
-    height: 100%;
-}
-
-#top .section01 .titWrap
-{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-
-    -webkit-transform: translate(-50%, -50%);
-        -ms-transform: translate(-50%, -50%);
-            transform: translate(-50%, -50%);
-    text-align: center;
-
-    color: #fff;
-}
-
-#top .section01 .titWrap > img
-{
-    width: 325px;
-    height: auto;
-}
-
-#top .section01 .titWrap > img:nth-child(1)
-{
-    margin-bottom: 18px;
-}
-
-#top .section01 .titWrap > img:nth-child(2)
-{
-    margin-bottom: 15px;
-}
-
-#top .section01 .titWrap .text01
-{
-    font-size: 20px;
-
-    margin-bottom: 7px;
-
-    text-align: center;
-    letter-spacing: .06em;
-}
-
-#top .section01 .titWrap .text02
-{
-    font-size: 10px;
-
-    text-align: center;
-    letter-spacing: .08em;
-}
-
-#top .section01 .timeWrap
-{
-    position: absolute;
-    z-index: 8;
-    bottom: 17px;
-    left: 50%;
-
-    -webkit-transform: translateX(-50%);
-        -ms-transform: translateX(-50%);
-            transform: translateX(-50%);
-    text-align: center;
-
-    color: #fff;
-}
-
-#top .section01 .timeWrap .text
-{
-    font-size: 14px;
-
-    letter-spacing: .05em;
-}
-
-#top .section01 .timeWrap .time
-{
-    font-size: 30px;
-
-    margin: 0;
-    padding-top: 3px;
-
-    letter-spacing: .05em;
-}
-
-#top .section01 .next
-{
-    position: absolute;
-    bottom: 0;
-    left: 50%;
-
-    -webkit-transform: translateX(-50%);
-        -ms-transform: translateX(-50%);
-            transform: translateX(-50%);
-
-    color: #fff;
-}
-
-#top .section01 .next .text
-{
-    font-size: 15px;
-    line-height: 1;
-
-    margin-bottom: 9px;
-
-    letter-spacing: .1em;
-}
-
-#top .section01 .next .bar
-{
-    width: 1px;
-    height: 50px;
-    margin: 0 auto;
-
-    background-color: #fff;
-}
-
 /* --------------------------------------------------------------------------------
 *
 *   section01

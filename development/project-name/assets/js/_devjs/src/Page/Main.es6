@@ -10,6 +10,8 @@ import DisplayTop from '../Display/DisplayTop.es6';
 // import DisplayInterviewDetail from '../Display/DisplayInterviewDetail.es6';
 // import DisplayHistory from '../Display/DisplayHistory.es6';
 
+'use strict';
+
 export default class Main {
 
   constructor() {
@@ -21,7 +23,7 @@ export default class Main {
 
   onImmediate() {
 
-    window.console.log('test');
+    // window.console.log('test');
   }
 
   onReady() {
