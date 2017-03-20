@@ -25,8 +25,8 @@ export default class DisplayTop {
   onImmediate() {
 
 
-    // ループスタート
-    // gb.in.up.loop();
+    // アニメーションループスタート
+    gb.in.up.loop();
     
   }
 
