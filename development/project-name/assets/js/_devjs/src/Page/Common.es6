@@ -17,12 +17,12 @@ import ScrollMgr from '../MyLibs/EventMgr/ScrollMgr.es6';
 import MouseMgr from '../MyLibs/EventMgr/MouseMgr.es6';
 import LoadMgr from '../Func/LoadMgr.es6';
 
-import Pjax from '../Func/Pjax.es6';
+// import Pjax from '../Func/Pjax.es6';
 import JudgeEnvironment from '../Func/JudgeEnvironment.es6';
 import ResponsiveSwitchImg from '../Func/_events/ResponsiveSwitchImg.es6';
 import SwipeTransition from '../Func/SwipeTransition.es6';
 
-import Menu from '../Display/UI/_compornents/Menu.es6';
+// import Menu from '../Display/UI/_compornents/Menu.es6';
 // import Nav from '../Display/UI/Nav.es6';
 import Alert from '../Display/UI/Alert.es6';
 import SideR from '../Display/UI/SideR.es6';

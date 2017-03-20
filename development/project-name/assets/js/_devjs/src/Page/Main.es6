@@ -1,8 +1,10 @@
-//--------------------------------------------------
-//
-//  main
-//
-//--------------------------------------------------
+/**
+ * fileOverview:
+ * Project:
+ * File: Main
+ * Date:
+ * Author:
+ */
 
 import DisplayTop from '../Display/DisplayTop.es6';
 // import DisplayMovie from '../Display/DisplayMovie.es6';
