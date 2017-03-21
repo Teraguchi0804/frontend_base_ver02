@@ -5,7 +5,7 @@
 // ------------------------------------------------------------
 import Common from './Page/Common.js';
 import Main from './Page/Main.js';
-// import DisplayTop from './Display/DisplayTop.es6';
+// import DisplayTop from './Display/DisplayTop.js';
 
 (()=>{
 

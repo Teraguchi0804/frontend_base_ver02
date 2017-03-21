@@ -7,10 +7,10 @@
  */
 
 import DisplayTop from '../Display/DisplayTop.js';
-// import DisplayMovie from '../Display/DisplayMovie.es6';
-// import DisplayInterview from '../Display/DisplayInterview.es6';
-// import DisplayInterviewDetail from '../Display/DisplayInterviewDetail.es6';
-// import DisplayHistory from '../Display/DisplayHistory.es6';
+// import DisplayMovie from '../Display/DisplayMovie.js';
+// import DisplayInterview from '../Display/DisplayInterview.js';
+// import DisplayInterviewDetail from '../Display/DisplayInterviewDetail.js';
+// import DisplayHistory from '../Display/DisplayHistory.js';
 
 'use strict';
 

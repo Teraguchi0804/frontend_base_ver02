@@ -6,46 +6,46 @@
  * Author:
  */
 
-import Conf from '../Conf.es6';
-import Util from '../MyLibs/Util.es6';
-import Func from '../MyLibs/Func.es6';
+import Conf from '../Conf.js';
+import Util from '../MyLibs/Util.js';
+import Func from '../MyLibs/Func.js';
 
-import ReadyMgr from '../MyLibs/EventMgr/ReadyMgr.es6';
-import UpdateMgr from '../MyLibs/EventMgr/UpdateMgr.es6';
-import ResizeMgr from '../MyLibs/EventMgr/ResizeMgr.es6';
-import ScrollMgr from '../MyLibs/EventMgr/ScrollMgr.es6';
-import MouseMgr from '../MyLibs/EventMgr/MouseMgr.es6';
-import LoadMgr from '../Func/LoadMgr.es6';
+import ReadyMgr from '../MyLibs/EventMgr/ReadyMgr.js';
+import UpdateMgr from '../MyLibs/EventMgr/UpdateMgr.js';
+import ResizeMgr from '../MyLibs/EventMgr/ResizeMgr.js';
+import ScrollMgr from '../MyLibs/EventMgr/ScrollMgr.js';
+import MouseMgr from '../MyLibs/EventMgr/MouseMgr.js';
+import LoadMgr from '../Func/LoadMgr.js';
 
-// import Pjax from '../Func/Pjax.es6';
-import JudgeEnvironment from '../Func/JudgeEnvironment.es6';
-import ResponsiveSwitchImg from '../Func/_events/ResponsiveSwitchImg.es6';
-import SwipeTransition from '../Func/SwipeTransition.es6';
+// import Pjax from '../Func/Pjax.js';
+import JudgeEnvironment from '../Func/JudgeEnvironment.js';
+import ResponsiveSwitchImg from '../Func/_events/ResponsiveSwitchImg.js';
+import SwipeTransition from '../Func/SwipeTransition.js';
 
-// import Menu from '../Display/UI/_compornents/Menu.es6';
-// import Nav from '../Display/UI/Nav.es6';
-import Alert from '../Display/UI/Alert.es6';
-import SideR from '../Display/UI/SideR.es6';
-import Time from '../Func/Time.es6';
-import ScrollTransition from '../Func/ScrollTransition.es6';
-import PageTop from '../Display/UI/_parts/PageTop.es6';
-import Sec01Video from '../Display/UI/Sec01Video.es6';
-import Sns from '../Func/Sns.es6';
-import SliderTop from '../Display/UI/SliderTop.es6';
+// import Menu from '../Display/UI/_compornents/Menu.js';
+// import Nav from '../Display/UI/Nav.js';
+import Alert from '../Display/UI/Alert.js';
+import SideR from '../Display/UI/SideR.js';
+import Time from '../Func/Time.js';
+import ScrollTransition from '../Func/ScrollTransition.js';
+import PageTop from '../Display/UI/_parts/PageTop.js';
+import Sec01Video from '../Display/UI/Sec01Video.js';
+import Sns from '../Func/Sns.js';
+import SliderTop from '../Display/UI/SliderTop.js';
 
 
-import Layout from '../Display/Layout/Layout.es6';
+import Layout from '../Display/Layout/Layout.js';
 
-import DisplayOpening from '../Display/DisplayOpening.es6';
-import Section02Bg from '../Display/Effects/03_effects/Section02Bg/CVContents.es6';
-import PageTransitionEffect from '../Display/Effects/03_effects/PageTransition/PageTransitionController.es6';
-import HoverEffectSVG from '../Display/Effects/03_effects/HoverEffectSVG.es6';
-import HoverEffectSVGLogo from '../Display/Effects/03_effects/HoverEffectSVGLogo.es6';
-import HoverEffectMenuBtn from '../Display/Effects/03_effects/HoverEffectMenuBtn.es6';
-import HoverEffectSVGArrow from '../Display/Effects/03_effects/HoverEffectSVGArrow.es6';
-import HoverEffectSNSPCFooter from '../Display/Effects/03_effects/HoverEffectSNSPCFooter.es6';
-import HoverEffectSVGArrowSideR from '../Display/Effects/03_effects/HoverEffectSVGArrowSideR.es6';
-// import HoverEffectMenuItem from '../Display/Effects/03_effects/HoverEffectMenuItem.es6';
+import DisplayOpening from '../Display/DisplayOpening.js';
+import Section02Bg from '../Display/Effects/03_effects/Section02Bg/CVContents.js';
+import PageTransitionEffect from '../Display/Effects/03_effects/PageTransition/PageTransitionController.js';
+import HoverEffectSVG from '../Display/Effects/03_effects/HoverEffectSVG.js';
+import HoverEffectSVGLogo from '../Display/Effects/03_effects/HoverEffectSVGLogo.js';
+import HoverEffectMenuBtn from '../Display/Effects/03_effects/HoverEffectMenuBtn.js';
+import HoverEffectSVGArrow from '../Display/Effects/03_effects/HoverEffectSVGArrow.js';
+import HoverEffectSNSPCFooter from '../Display/Effects/03_effects/HoverEffectSNSPCFooter.js';
+import HoverEffectSVGArrowSideR from '../Display/Effects/03_effects/HoverEffectSVGArrowSideR.js';
+// import HoverEffectMenuItem from '../Display/Effects/03_effects/HoverEffectMenuItem.js';
 
 
 export default class Common {

@@ -3,13 +3,13 @@
 //  Display
 //
 //--------------------------------------------------
-import Effects from './Effects/Effects.es6';
-import ScaleTop from '../Display/Layout/Size/ScaleTop.es6';
-import HoverEffectSNSSPFooter from '../Display/Effects/03_effects/HoverEffectSNSSPFooter.es6';
-import HoverEffectSVGArrowTop from '../Display/Effects/03_effects/HoverEffectSVGArrowTop.es6';
-import TopTime from '../Display/UI/TopTime.es6';
-import Position from './Layout/Postion/Position.es6';
-import WebGLinit from './WebGLinit.es6';
+import Effects from './Effects/Effects.js';
+import ScaleTop from '../Display/Layout/Size/ScaleTop.js';
+import HoverEffectSNSSPFooter from '../Display/Effects/03_effects/HoverEffectSNSSPFooter.js';
+import HoverEffectSVGArrowTop from '../Display/Effects/03_effects/HoverEffectSVGArrowTop.js';
+import TopTime from '../Display/UI/TopTime.js';
+import Position from './Layout/Postion/Position.js';
+import WebGLinit from './WebGLinit.js';
 
 'use strict';
 
