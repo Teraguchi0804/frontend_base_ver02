@@ -2,7 +2,7 @@
 <!DOCTYPE html>
 <html lang="ja">
 <head>
-<!-- ************************************************************
+    <!-- ************************************************************
 //
 //  meta
 //
@@ -30,53 +30,56 @@
 <meta name="twitter:title" content="" class="twTit">
 <meta name="twitter:description" content="ダミーダミーダミーダミーダミーダミーダミー" class="twDes">
 <meta name="twitter:image" content="" class="twImg">
-<!-- ************************************************************
+    <!-- ************************************************************
 //
 //  style sheet
 //
 // ************************************************************ -->
 <link href="https://fonts.googleapis.com/css?family=Cormorant:500,500i|Roboto+Condensed" rel="stylesheet">
 <script type='text/javascript'>var _sf_startpt=(new Date()).getTime()</script>
-<link href="/project-name/assets/css/top/style.css" rel="stylesheet" class="stylesheet">
-<!-- ************************************************************
+    <link href="/project-name/assets/css/top/style.css" rel="stylesheet" class="stylesheet">
+    <!-- ************************************************************
 //
 //  script
 //
 // ************************************************************ -->
 <script type='text/javascript' src='/project-name/assets/js/common/libs.js'></script>
-<script type='text/javascript' src='/project-name/assets/js/main.js'></script>
+    <script type='text/javascript' src='/project-name/assets/js/main.js'></script>
+
+    <script>
+//        onload = function(){
+//            // canvasエレメントを取得
+//            var c = document.getElementById('canvas');
+//            c.width = 500;
+//            c.height = 300;
+//
+//            // webglコンテキストを取得
+//            var gl = c.getContext('webgl') || c.getContext('experimental-webgl');
+//
+//            // canvasを黒でクリア(初期化)する
+//            gl.clearColor(0.0, 0.0, 0.0, 1.0);
+//            gl.clear(gl.COLOR_BUFFER_BIT);
+//        };
+    </script>
+
+    <script id="vs" type="x-shader/x-vertex">
+attribute vec3 position;
+uniform   mat4 mvpMatrix;
+
+void main(void){
+    gl_Position = mvpMatrix * vec4(position, 1.0);
+}
+        </script>
+
+    <script id="fs" type="x-shader/x-fragment">
+void main(void){
+    gl_FragColor = vec4(1.0, 1.0, 1.0, 1.0);
+}
+        </script>
+
 </head>
 <body id="top" class="top" data-id="top">
-<!-- ************************************************************
-//
-//  log
-//
-// ************************************************************ -->
-<!-- Google Tag Manager -->
-<!--<noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-PJZWT8"-->
-<!--height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>-->
-<!--<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':-->
-<!--new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],-->
-<!--j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=-->
-<!--'//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);-->
-<!--})(window,document,'script','dataLayer','GTM-PJZWT8');</script>-->
-<!-- End Google Tag Manager -->
 
-<!-- Facebook Pixel Code CCCMH HAMADA ADD -->
-<!--<script>-->
-<!--!function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?-->
-<!--n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;-->
-<!--n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;-->
-<!--t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,-->
-<!--document,'script','https://connect.facebook.net/en_US/fbevents.js');-->
-<!--fbq('init', '208249859621430');-->
-<!--fbq('track', 'PageView');-->
-<!--</script>-->
-<!--<noscript><img height="1" width="1" style="display:none"-->
-<!--src="https://www.facebook.com/tr?id=208249859621430&ev=PageView&noscript=1"-->
-<!--/></noscript>-->
-<!-- DO NOT MODIFY -->
-<!-- End Facebook Pixel Code -->
 
 <!-- ************************************************************
 //
@@ -96,59 +99,17 @@
 
 
 <div id="wrapper">
-<div id="inner">
+    <div id="inner">
 
-  <div class="section section01" data-id="top">
+        <div class="section section01" data-id="top">
 
-  <!-- ************************************************************
-  //  titWrap
-  // ************************************************************ -->
-  <div class="titWrap">
-    <!--<img src="/project-name/assets/resource/svg/logo01.svg" alt="">-->
-    <!--<img src="/project-name/assets/resource/svg/logo02.svg" alt="">-->
-    <!-- <p class="text text01">with Tiffany East West watch</p>
-    <p class="text text02">
-      TIFFANY & Co.&nbsp;&nbsp;&nbsp;<img src="/project-name/assets/resource/svg/x.svg" alt="">&nbsp;&nbsp;&nbsp;madame FIGARO.jp
-    </p> -->
-    <p class="text text01">
-      <!--<img src="/project-name/assets/resource/img/top/text01_pc.png" alt="" class="responsiveImg spSize">-->
-    </p>
-    
-  </div>
+  <!--<canvas id="canvas"></canvas>-->
 
-  <!-- ************************************************************
-  //  time
-  // ************************************************************ -->
-  <div class="timeWrap">
-
-    <div class="textWrap">
-
-      <p class="text">
-        NY TIME 
-      </p>
-
-      <p class="time"><span class="h01">1</span><span class="h02">6</span>&nbsp;<span class="colon">:</span>&nbsp;<span class="m01">3</span><span class="m02">0</span></p>
-
-    </div>
-
-  </div>
-
-
-  <!-- ************************************************************
-  //  next
-  // ************************************************************ -->
-  <a href="/movie/" class="pjax">
-    <div class="next">
-      <p class="text">Movie</p>
-      <!-- <div class="bar"></div> -->
-      
-      
-    </div>
-  </a>
+  <img src="/project-name/assets/resource/img/top/dummy01.jpg" width="450" height="329">
 
 </div>
 
-</div>
+    </div>
 </div>
 
 <!-- ************************************************************
@@ -169,34 +130,6 @@
   <!--</p>-->
 
 </footer>
-
-<!-- tag -->
-<!--<script type='text/javascript'>-->
-    <!--var _sf_async_config = _sf_async_config || {};-->
-    <!--/** CONFIGURATION START **/-->
-    <!--_sf_async_config.uid = 63834;-->
-    <!--_sf_async_config.domain = 'madamefigaro.jp';-->
-    <!--_sf_async_config.useCanonical = true;-->
-    <!--_sf_async_config.sections = 'madamefigaro.jp';-->
-    <!--_sf_async_config.authors = 'madamefigaro.jp';-->
-    <!--/** CONFIGURATION END **/-->
-    <!--(function() {-->
-        <!--function loadChartbeat() {-->
-            <!--window._sf_endpt = (new Date()).getTime();-->
-            <!--var e = document.createElement('script');-->
-            <!--e.setAttribute('language', 'javascript');-->
-            <!--e.setAttribute('type', 'text/javascript');-->
-            <!--e.setAttribute('src', '//static.chartbeat.com/js/chartbeat.js');-->
-            <!--document.body.appendChild(e);-->
-        <!--}-->
-        <!--var oldonload = window.onload;-->
-        <!--window.onload = (typeof window.onload != 'function') ?-->
-            <!--loadChartbeat : function() {-->
-                <!--oldonload();-->
-                <!--loadChartbeat();-->
-            <!--};-->
-    <!--})();-->
-<!--</script>-->
 
 
 </body>

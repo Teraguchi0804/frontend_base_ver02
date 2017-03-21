@@ -4,7 +4,7 @@ const PATH = require('./config');
 module.exports = {
 	entry: {
 		// "main": "../../dev/assets/devjs/src/es6/main.js",
-		"main": PATH.dev.devjs + "src/Top.es6",
+		"main": PATH.dev.devjs + "src/Top.js",
 		// "page01": PATH.dev.devjs + "src/Page01.js",
 	},
 	output: {

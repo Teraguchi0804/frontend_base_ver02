@@ -6,7 +6,7 @@
  * Author:
  */
 
-import DisplayTop from '../Display/DisplayTop.es6';
+import DisplayTop from '../Display/DisplayTop.js';
 // import DisplayMovie from '../Display/DisplayMovie.es6';
 // import DisplayInterview from '../Display/DisplayInterview.es6';
 // import DisplayInterviewDetail from '../Display/DisplayInterviewDetail.es6';
@@ -25,7 +25,6 @@ export default class Main {
 
   onImmediate() {
 
-    // window.console.log('test');
   }
 
   onReady() {

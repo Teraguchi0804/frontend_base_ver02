@@ -6,9 +6,9 @@ import PATH from '../../config';
 
 gulp.task('minifyJS', ()=>{
 
-    gulp.src([PATH.dev.js + '**/*.js','!' + PATH.dev.js + '_devjs/**/*'])
-        .pipe(strip_debug())
-        .pipe(uglify({preserveComments : 'some'})) //preserveComments: 'some'
-        .pipe(gulp.dest(PATH.release.js));
+  gulp.src([PATH.dev.js + '**/*.js', '!' + PATH.dev.js + '_devjs/**/*'])
+      .pipe(strip_debug())
+      .pipe(uglify({preserveComments : 'some'})) //preserveComments: 'some'
+      .pipe(gulp.dest(PATH.release.js));
 
 });

@@ -3,8 +3,8 @@
 //  Top
 //
 // ------------------------------------------------------------
-import Common from './Page/Common.es6';
-import Main from './Page/Main.es6';
+import Common from './Page/Common.js';
+import Main from './Page/Main.js';
 // import DisplayTop from './Display/DisplayTop.es6';
 
 (()=>{
