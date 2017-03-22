@@ -1,15 +1,23 @@
-//--------------------------------------------------
-//
-//  updateManager
-//
-//--------------------------------------------------
+/**
+ * fileOverview: 画面更新クラス
+ * Project:
+ * File: UpdateMgr
+ * Date:
+ * Author:
+ */
+
+'use strict';
 
 export default class UpdateMgr {
 
   constructor() {
 
+    //更新回数
     this.cnt = 0;
+
+    //毎フレーム実行させる関数を保持
     this.updateList = [];
+
     this.len = 0;
     this.Timer = null;
     this.isStop = false;
@@ -21,12 +29,14 @@ export default class UpdateMgr {
 
   }
 
+  //更新(登録された関数の総数分実行する)
   update() {
 
     for (var i in this.updateList) this.updateList[i].func();
 
   }
 
+  //更新の実行関数の内容
   loop() {
 
     this.update();
