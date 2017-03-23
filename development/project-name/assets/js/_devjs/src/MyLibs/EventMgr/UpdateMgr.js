@@ -24,19 +24,42 @@ export default class UpdateMgr {
 
   }
 
-  setup() {
+  /**
+   *  実行したい関数を登録
+   *  func : 関数
+   */
+  add(name, func) {
 
+    var obj = {name:name,func:func};
+
+    this.updateList.push(obj);
 
   }
 
-  //更新(登録された関数の総数分実行する)
+  /**
+   *  実行したい関数を削除
+   *  func : 関数
+   */
+  remove(name) {
+
+    var target = {name:name,func:()=>{}};
+
+    UpdateMgr.arrRemove(this.updateList, target);
+
+  }
+
+  /**
+   *  更新(登録された関数の総数分実行する)
+   */
   update() {
 
     for (var i in this.updateList) this.updateList[i].func();
 
   }
 
-  //更新の実行関数の内容
+  /**
+   *　更新の実行関数の内容
+   */
   loop() {
 
     this.update();
@@ -48,12 +71,18 @@ export default class UpdateMgr {
 
   }
 
+  /**
+   *　更新停止
+   */
   stop() {
 
     this.isStop = true;
 
   }
 
+  /**
+   *　更新再開
+   */
   resume() {
 
     this.isStop = false;
@@ -61,27 +90,9 @@ export default class UpdateMgr {
 
   }
 
-  add(name, func) {
-
-    var obj = {name:name,func:func};
-
-    this.updateList.push(obj);
-    
-  }
-
-  remove(name) {
-
-    var target = {name:name,func:()=>{}};
-
-    UpdateMgr.arrRemove(this.updateList, target);
-
-  }
-
-  // ------------------------------------------------------------
-  //
-  //  静的メンバ
-  //
-  // ------------------------------------------------------------
+  /**
+   *　静的メンバ関数
+   */
   static arrRemove(arr , target) {
 
     var len = arr.length;

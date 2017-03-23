@@ -18,35 +18,36 @@ import MouseMgr from '../MyLibs/EventMgr/MouseMgr.js';
 import LoadMgr from '../Func/LoadMgr.js';
 
 // import Pjax from '../Func/Pjax.js';
-import JudgeEnvironment from '../Func/JudgeEnvironment.js';
-import ResponsiveSwitchImg from '../Func/_events/ResponsiveSwitchImg.js';
-import SwipeTransition from '../Func/SwipeTransition.js';
+// import JudgeEnvironment from '../Func/JudgeEnvironment.js';
+// import ResponsiveSwitchImg from '../Func/_events/ResponsiveSwitchImg.js';
+// import SwipeTransition from '../Func/SwipeTransition.js';
 
 // import Menu from '../Display/UI/_compornents/Menu.js';
 // import Nav from '../Display/UI/Nav.js';
-import Alert from '../Display/UI/Alert.js';
-import SideR from '../Display/UI/SideR.js';
-import Time from '../Func/Time.js';
+// import Alert from '../Display/UI/Alert.js';
+// import SideR from '../Display/UI/SideR.js';
+// import Time from '../Func/Time.js';
 import ScrollTransition from '../Func/ScrollTransition.js';
 import PageTop from '../Display/UI/_parts/PageTop.js';
-import Sec01Video from '../Display/UI/Sec01Video.js';
+// import Sec01Video from '../Display/UI/Sec01Video.js';
 import Sns from '../Func/Sns.js';
-import SliderTop from '../Display/UI/SliderTop.js';
+// import SliderTop from '../Display/UI/SliderTop.js';
 
 
-import Layout from '../Display/Layout/Layout.js';
+// import Layout from '../Display/Layout/Layout.js';
 
-import DisplayOpening from '../Display/DisplayOpening.js';
-import Section02Bg from '../Display/Effects/03_effects/Section02Bg/CVContents.js';
-import PageTransitionEffect from '../Display/Effects/03_effects/PageTransition/PageTransitionController.js';
-import HoverEffectSVG from '../Display/Effects/03_effects/HoverEffectSVG.js';
-import HoverEffectSVGLogo from '../Display/Effects/03_effects/HoverEffectSVGLogo.js';
+// import DisplayOpening from '../Display/DisplayOpening.js';
+// import Section02Bg from '../Display/Effects/03_effects/Section02Bg/CVContents.js';
+// import PageTransitionEffect from '../Display/Effects/03_effects/PageTransition/PageTransitionController.js';
+// import HoverEffectSVG from '../Display/Effects/03_effects/HoverEffectSVG.js';
+// import HoverEffectSVGLogo from '../Display/Effects/03_effects/HoverEffectSVGLogo.js';
 import HoverEffectMenuBtn from '../Display/Effects/03_effects/HoverEffectMenuBtn.js';
 import HoverEffectSVGArrow from '../Display/Effects/03_effects/HoverEffectSVGArrow.js';
-import HoverEffectSNSPCFooter from '../Display/Effects/03_effects/HoverEffectSNSPCFooter.js';
-import HoverEffectSVGArrowSideR from '../Display/Effects/03_effects/HoverEffectSVGArrowSideR.js';
+// import HoverEffectSNSPCFooter from '../Display/Effects/03_effects/HoverEffectSNSPCFooter.js';
+// import HoverEffectSVGArrowSideR from '../Display/Effects/03_effects/HoverEffectSVGArrowSideR.js';
 // import HoverEffectMenuItem from '../Display/Effects/03_effects/HoverEffectMenuItem.js';
 
+'use strict';
 
 export default class Common {
 
@@ -118,23 +119,23 @@ export default class Common {
     // gb.in.pagetop = new PageTop();
 
     // bg
-    gb.in.sliderTop = new SliderTop($('#bgWrap .sec01'));
+    // gb.in.sliderTop = new SliderTop($('#bgWrap .sec01'));
 
     // ------------------------------------------------------------
     //  Effects
     // ------------------------------------------------------------
-    gb.in.pageTransitionEffect = new PageTransitionEffect($('#pageTransitionLayer'));
-    gb.in.sec01Video = new Sec01Video();
-    gb.in.Sec02Bg = new Section02Bg();
+    // gb.in.pageTransitionEffect = new PageTransitionEffect($('#pageTransitionLayer'));
+    // gb.in.sec01Video = new Sec01Video();
+    // gb.in.Sec02Bg = new Section02Bg();
 
-    gb.in.he01 = new HoverEffectSVG($('.SVGHover'),'#fff','#000');
-    gb.in.he02 = new HoverEffectSVG($('.SVGHoverW'),'#81d8d0','#fff');
-    gb.in.he03 = new HoverEffectSVG($('.SVGHoverW02'),'#81d8d0','#000');
-    gb.in.he04 = new HoverEffectSVGLogo($('#header .logo, #header .subTit'));
+    // gb.in.he01 = new HoverEffectSVG($('.SVGHover'),'#fff','#000');
+    // gb.in.he02 = new HoverEffectSVG($('.SVGHoverW'),'#81d8d0','#fff');
+    // gb.in.he03 = new HoverEffectSVG($('.SVGHoverW02'),'#81d8d0','#000');
+    // gb.in.he04 = new HoverEffectSVGLogo($('#header .logo, #header .subTit'));
     // gb.in.he05 = new HoverEffectMenuItem($('#menu .menuList .item'));
-    gb.in.he06 = new HoverEffectSVGArrowSideR($('#sideR .next'));
+    // gb.in.he06 = new HoverEffectSVGArrowSideR($('#sideR .next'));
     // gb.in.he07 = new HoverEffectMenuBtn($('.menuBtn01'));
-    gb.in.he08 = new HoverEffectSNSPCFooter($('#sideL .sns.sp'));
+    // gb.in.he08 = new HoverEffectSNSPCFooter($('#sideL .sns.sp'));
 
     // logo 出す
     // TweenMax.to($('#header .logo'), 2.2, {opacity: 1, ease: Power2.easeInOut})

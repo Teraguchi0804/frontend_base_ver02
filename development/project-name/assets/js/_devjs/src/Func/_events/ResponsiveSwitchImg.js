@@ -87,7 +87,7 @@ export default class ResponsiveSwitchImg {
        
   resume() {
 
-    log('resume');
+    // log('resume');
 
     this.setup();
     this.run();

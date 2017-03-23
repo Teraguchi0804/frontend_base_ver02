@@ -1,8 +1,12 @@
-//--------------------------------------------------
-//
-//  JudgeEnvironment
-//
-//--------------------------------------------------
+/**
+ * fileOverview: 環境判定クラス(デバイス、ブラウザ)
+ * Project:
+ * File: JudgeEnvironment
+ * Date:
+ * Author:
+ */
+
+'use strict';
 
 export default class JudgeEnvironment {
 

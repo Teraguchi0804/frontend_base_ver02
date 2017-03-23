@@ -1,8 +1,11 @@
-//--------------------------------------------------
-//
-//  HashChange
-//
-//--------------------------------------------------
+/**
+ * fileOverview:
+ * Project:
+ * File: HashChange
+ * Date:
+ * Author:
+ */
+
 
 export default class HashChange {
 
