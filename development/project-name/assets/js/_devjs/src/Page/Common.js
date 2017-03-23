@@ -18,9 +18,9 @@ import MouseMgr from '../MyLibs/EventMgr/MouseMgr.js';
 import LoadMgr from '../Func/LoadMgr.js';
 
 // import Pjax from '../Func/Pjax.js';
-// import JudgeEnvironment from '../Func/JudgeEnvironment.js';
-// import ResponsiveSwitchImg from '../Func/_events/ResponsiveSwitchImg.js';
-// import SwipeTransition from '../Func/SwipeTransition.js';
+import JudgeEnvironment from '../Func/JudgeEnvironment.js';
+import ResponsiveSwitchImg from '../Func/_events/ResponsiveSwitchImg.js';
+import SwipeTransition from '../Func/SwipeTransition.js';
 
 // import Menu from '../Display/UI/_compornents/Menu.js';
 // import Nav from '../Display/UI/Nav.js';
@@ -28,24 +28,13 @@ import LoadMgr from '../Func/LoadMgr.js';
 // import SideR from '../Display/UI/SideR.js';
 // import Time from '../Func/Time.js';
 import ScrollTransition from '../Func/ScrollTransition.js';
-import PageTop from '../Display/UI/_parts/PageTop.js';
+// import PageTop from '../Display/UI/_parts/PageTop.js';
 // import Sec01Video from '../Display/UI/Sec01Video.js';
 import Sns from '../Func/Sns.js';
 // import SliderTop from '../Display/UI/SliderTop.js';
 
 
 // import Layout from '../Display/Layout/Layout.js';
-
-// import DisplayOpening from '../Display/DisplayOpening.js';
-// import Section02Bg from '../Display/Effects/03_effects/Section02Bg/CVContents.js';
-// import PageTransitionEffect from '../Display/Effects/03_effects/PageTransition/PageTransitionController.js';
-// import HoverEffectSVG from '../Display/Effects/03_effects/HoverEffectSVG.js';
-// import HoverEffectSVGLogo from '../Display/Effects/03_effects/HoverEffectSVGLogo.js';
-import HoverEffectMenuBtn from '../Display/Effects/03_effects/HoverEffectMenuBtn.js';
-import HoverEffectSVGArrow from '../Display/Effects/03_effects/HoverEffectSVGArrow.js';
-// import HoverEffectSNSPCFooter from '../Display/Effects/03_effects/HoverEffectSNSPCFooter.js';
-// import HoverEffectSVGArrowSideR from '../Display/Effects/03_effects/HoverEffectSVGArrowSideR.js';
-// import HoverEffectMenuItem from '../Display/Effects/03_effects/HoverEffectMenuItem.js';
 
 'use strict';
 

@@ -1,10 +1,10 @@
 /**
- * fileOverview: 環境判定クラス(デバイス、ブラウザ)
+ * fileOverview: 環境判定クラス(デバイス、ブラウザ)、各判定メソッド詳細はDevice.jsを参照
  * Project:
  * File: JudgeEnvironment
  * Date:
  * Author:
- */
+ */s
 
 'use strict';
 
