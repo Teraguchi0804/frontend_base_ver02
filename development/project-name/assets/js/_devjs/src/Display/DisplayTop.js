@@ -56,7 +56,7 @@ export default class DisplayTop {
 
   static run() {
 
-		window.console.log('static_Run');
+		// window.console.log('static_Run');
 
     // ------------------------------------------------------------
     //  UI / Layout
