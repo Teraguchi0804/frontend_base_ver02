@@ -1,8 +1,10 @@
-//--------------------------------------------------
-//
-//  Loader
-//
-//--------------------------------------------------
+/**
+ * fileOverview:
+ * Project:
+ * File: Loader
+ * Date:
+ * Author:
+ */
 
 export default class Loader {
 
@@ -133,8 +135,8 @@ export default class Loader {
 
     // YouTube動画
     window.onYouTubeIframeReady = function() {
-
-      log('youtubeready');
+      
+      window.console.log('youtubeready');
 
 
     }
