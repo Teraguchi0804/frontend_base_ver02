@@ -158,6 +158,7 @@ export default class Loader {
 
   }
 
+  //WebFontのローダー管理
   webFont(config) {
 
     // web font loader用jsのappend
