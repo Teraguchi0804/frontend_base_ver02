@@ -14,6 +14,7 @@ gulp.task('watch', ()=>{
     gulp.watch([PATH.dev.root + '**/*.ejs',PATH.dev.image + '**/*.svg'],['compileHTML']);
     gulp.watch( PATH.dev.scss + '**/*.scss',['compileSCSS']);
     gulp.watch([PATH.dev.devjs + '**/*.js', PATH.dev.devjs + '**/*.es6'],['webpack','eslint']);
+    gulp.watch([PATH.dev.devjs + '**/*.frag', PATH.dev.devjs + '**/*.vert'],['webpack']);
     gulp.watch([PATH.dev.root + '**/*.html',PATH.dev.css + '**/*.css',PATH.dev.js + '**/*.js'],['sync']);
 });
 

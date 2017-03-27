@@ -34,7 +34,7 @@ import Sns from '../Func/Sns.js';
 // import SliderTop from '../Display/UI/SliderTop.js';
 
 
-// import Layout from '../Display/Layout/Layout.js';
+import Layout from '../Display/Layout/Layout.js';
 
 'use strict';
 

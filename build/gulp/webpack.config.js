@@ -21,7 +21,9 @@ module.exports = {
 				query: {
 					presets: ["babel-preset-es2015", "babel-preset-es2016", "babel-preset-es2017"].map(require.resolve)
 				}
-			}
+			},
+			{ test: /\.(glsl|frag|vert)$/, loader: 'raw', exclude: /node_modules/ },
+			{ test: /\.(glsl|frag|vert)$/, loader: 'glslify', exclude: /node_modules/ }
 		]
 	},
 	resolveLoader: {

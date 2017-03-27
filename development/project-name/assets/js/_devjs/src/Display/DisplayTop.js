@@ -11,6 +11,9 @@ import TopTime from '../Display/UI/TopTime.js';
 import Position from './Layout/Postion/Position.js';
 import WebGLinit from './WebGLinit.js';
 
+import vs from './test.frag';
+
+
 'use strict';
 
 export default class DisplayTop {
