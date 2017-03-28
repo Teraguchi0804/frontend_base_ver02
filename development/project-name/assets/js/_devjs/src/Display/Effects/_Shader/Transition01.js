@@ -54,14 +54,14 @@
 
     getVs: function(){
       var self = this;
-      return $.get('/project-name/assets/js/_devjs/src/Display/Motion/Shader/Transition01.vs', function(data){
+      return $.get('/project-name/assets/js/_devjs/src/Display/Motion/Shader/Transition01.vert', function(data){
         self.vs = data;
       });
     },
 
     getFs: function(){
       var self = this;
-      return $.get('/project-name/assets/js/_devjs/src/Display/Motion/Shader/Transition01.fs', function(data){
+      return $.get('/project-name/assets/js/_devjs/src/Display/Motion/Shader/Transition01.frag', function(data){
         self.fs = data;
       });
     },

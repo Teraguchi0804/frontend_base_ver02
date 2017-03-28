@@ -52,14 +52,14 @@
 
     getVs: function(){
       var self = this;
-      return $.get('/project-name/assets/js/_devjs/src/Display/Effects/_Shader/Transition02.vs', function(data){
+      return $.get('/project-name/assets/js/_devjs/src/Display/Effects/_Shader/Transition02.vert', function(data){
         self.vs = data;
       });
     },
 
     getFs: function(){
       var self = this;
-      return $.get('/project-name/assets/js/_devjs/src/Display/Effects/_Shader/Transition02.fs', function(data){
+      return $.get('/project-name/assets/js/_devjs/src/Display/Effects/_Shader/Transition02.frag', function(data){
         self.fs = data;
       });
     },

@@ -49,14 +49,14 @@
 
     getVs: function(){
       var self = this;
-      return $.get('/project-name/assets/js/_devjs/src/Display/Motion/Shader/Plasma.vs', function(data){
+      return $.get('/project-name/assets/js/_devjs/src/Display/Motion/Shader/Plasma.vert', function(data){
         self.vs = data;
       });
     },
 
     getFs: function(){
       var self = this;
-      return $.get('/project-name/assets/js/_devjs/src/Display/Motion/Shader/Plasma.fs', function(data){
+      return $.get('/project-name/assets/js/_devjs/src/Display/Motion/Shader/Plasma.frag', function(data){
         self.fs = data;
       });
     },

@@ -49,14 +49,14 @@
 
     getVs: function(){
       var self = this;
-      return $.get('/project-name/assets/js/_devjs/src/Display/Motion/Shader/Sepia.vs', function(data){
+      return $.get('/project-name/assets/js/_devjs/src/Display/Motion/Shader/Sepia.vert', function(data){
         self.vs = data;
       });
     },
 
     getFs: function(){
       var self = this;
-      return $.get('/project-name/assets/js/_devjs/src/Display/Motion/Shader/Sepia.fs', function(data){
+      return $.get('/project-name/assets/js/_devjs/src/Display/Motion/Shader/Sepia.frag', function(data){
         self.fs = data;
       });
     },

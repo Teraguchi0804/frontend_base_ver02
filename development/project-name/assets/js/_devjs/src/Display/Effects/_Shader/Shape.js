@@ -47,14 +47,14 @@
 
     getVs: function(){
       var self = this;
-      return $.get('/project-name/assets/js/_devjs/src/Display/Motion/Shader/Shape.vs', function(data){
+      return $.get('/project-name/assets/js/_devjs/src/Display/Motion/Shader/Shape.vert', function(data){
         self.vs = data;
       });
     },
 
     getFs: function(){
       var self = this;
-      return $.get('/project-name/assets/js/_devjs/src/Display/Motion/Shader/Shape.fs', function(data){
+      return $.get('/project-name/assets/js/_devjs/src/Display/Motion/Shader/Shape.frag', function(data){
         self.fs = data;
       });
     },

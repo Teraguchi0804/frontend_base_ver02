@@ -45,14 +45,14 @@ export default class Clock {
 
   getVs(){
     var self = this;
-    return $.get('/project-name/assets/js/_devjs/src/Display/Effects/_Shader/Clock.vs', function(data){
+    return $.get('/project-name/assets/js/_devjs/src/Display/Effects/_Shader/Clock.vert', function(data){
       self.vs = data;
     });
   }
 
   getFs(){
     var self = this;
-    return $.get('/project-name/assets/js/_devjs/src/Display/Effects/_Shader/Clock.fs', function(data){
+    return $.get('/project-name/assets/js/_devjs/src/Display/Effects/_Shader/Clock.frag', function(data){
       self.fs = data;
     });
   }

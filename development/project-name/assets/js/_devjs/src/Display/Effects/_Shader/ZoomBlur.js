@@ -53,14 +53,14 @@
 
     getVs: function(){
       var self = this;
-      return $.get('/project-name/assets/js/_devjs/src/Display/Effects/_Shader/ZoomBlur.vs', function(data){
+      return $.get('/project-name/assets/js/_devjs/src/Display/Effects/_Shader/ZoomBlur.vert', function(data){
         self.vs = data;
       });
     },
 
     getFs: function(){
       var self = this;
-      return $.get('/project-name/assets/js/_devjs/src/Display/Effects/_Shader/ZoomBlur.fs', function(data){
+      return $.get('/project-name/assets/js/_devjs/src/Display/Effects/_Shader/ZoomBlur.frag', function(data){
         self.fs = data;
       });
     },
