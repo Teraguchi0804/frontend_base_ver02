@@ -41,12 +41,25 @@ export default class Canvas {
    */
   _createCamera(){
 
+		// this.camera = new THREE.PerspectiveCamera(45, 1, 1, 20000);
+
   }
 
   /**
    * レンダラー作成
    */
   _createRenderer(){
+
+	@renderer = new THREE.WebGLRenderer({
+			canvas             : document.getElementById(@el().attr('id'))
+			alpha              : false
+			antialias          : false
+			stencil            : false
+			depth              : true
+			premultipliedAlpha : false
+		})
+	@renderer.autoClear = true
+	@renderer.setClearColor(0xffffff)
 
   }
 

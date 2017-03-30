@@ -6,20 +6,27 @@
  * Author:
  */
 
+window.THREE = require('three');
+
 'use strict';
 
 export default class Camera {
 
-	constructor() {
+	constructor(fov, aspect, near, far) {
 
 		this.camera = null;
-		this.renderer = null;
-		this.scene = null;
 
-		this.createCamera = this._createCamera.bind(this);
-		this.createRenderer = this._createRenderer.bind(this);
-		this.createScene = this._createScene.bind(this);
+		this.fov = fov;
+		this.aspect = aspect;
+		this.near = near;
+		this.far = far;
 
+		this.createCameraObject = this._createCameraObject.bind(this);
+		// this.createRenderer = this._createRenderer.bind(this);
+		// this.createScene = this._createScene.bind(this);
+
+
+		this.init();
 	}
 
 	/**
@@ -27,42 +34,42 @@ export default class Camera {
 	 */
 	init(){
 
-		this.createCamera();
-		this.createRenderer();
-		this.createScene();
+		this.createCameraObject();
 
 	}
 
 	/**
-	 * カメラ作成
+	 * カメラオブジェクト作成
 	 */
-	_createCamera(){
+	_createCameraObject(){
+
+		this.camera = new THREE.PerspectiveCamera(this.fov, this.aspect, this.near, this.far);
 
 	}
 
 	/**
 	 * レンダラー作成
 	 */
-	_createRenderer(){
-
-	}
+	// _createRenderer(){
+	//
+	// }
 
 	/**
 	 *　シーン作成
 	 */
-	_createScene(){
-
-	}
-
-
-	onLoad(){
-
-	}
-
-	setEvents() {
-
-		$(window).on('load', this.onLoad.bind(this));
-
-	}
+	// _createScene(){
+	//
+	// }
+	//
+	//
+	// onLoad(){
+	//
+	// }
+	//
+	// setEvents() {
+	//
+	// 	$(window).on('load', this.onLoad.bind(this));
+	//
+	// }
 
 }
