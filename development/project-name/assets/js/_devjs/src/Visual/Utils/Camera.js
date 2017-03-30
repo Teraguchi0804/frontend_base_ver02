@@ -6,7 +6,7 @@
  * Author:
  */
 
-window.THREE = require('three');
+// window.THREE = require('three');
 
 'use strict';
 
@@ -22,9 +22,6 @@ export default class Camera {
 		this.far = far;
 
 		this.createCameraObject = this._createCameraObject.bind(this);
-		// this.createRenderer = this._createRenderer.bind(this);
-		// this.createScene = this._createScene.bind(this);
-
 
 		this.init();
 	}

@@ -9,9 +9,14 @@ import HoverEffectSNSSPFooter from '../Display/Effects/03_effects/HoverEffectSNS
 import HoverEffectSVGArrowTop from '../Display/Effects/03_effects/HoverEffectSVGArrowTop.js';
 import TopTime from '../Display/UI/TopTime.js';
 import Position from './Layout/Postion/Position.js';
-import WebGLinit from './WebGLinit.js';
 
-import vs from './test.frag';
+// import WebGLinit from './WebGLinit.js';
+// import Canvas from '../Visual/Canvas.js';
+
+
+import Canvas from "../Visual/Canvas";
+
+// import vs from './test.frag';
 
 
 'use strict';
@@ -35,7 +40,8 @@ export default class DisplayTop {
 
   onLoad() {
 
-    // gb.in.webGLinit = new WebGLinit();
+    gb.in.canvas = new Canvas();
+		gb.in.canvas.init();
 
     // ------------------------------------------------------------
     //  UI / Layout

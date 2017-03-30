@@ -6,22 +6,27 @@
  * Author:
  */
 
-// import Loader from './Loader.js';
-// import Sec01Video from '../Display/UI/Sec01Video.js';
+import Entry from '../Entry.js';
+import Camera from './Utils/Camera.js';
 
 'use strict';
 
-export default class Canvas {
+export default class Canvas extends Entry{
 
   constructor() {
+
+    super();
 
     this.camera = null;
     this.renderer = null;
     this.scene = null;
 
+		this.cube = null;
+
     this.createCamera = this._createCamera.bind(this);
     this.createRenderer = this._createRenderer.bind(this);
     this.createScene = this._createScene.bind(this);
+    this.createObject = this._createObject.bind(this);
 
   }
 
@@ -29,10 +34,17 @@ export default class Canvas {
    * 初期化
    */
   init(){
+    
+    window.console.log('Canvas_Init');
 
     this.createCamera();
     this.createRenderer();
     this.createScene();
+
+		this.createObject();
+
+		this.scene.add(this.camera);
+		this.scene.add(this.cube);
 
   }
 
@@ -41,8 +53,10 @@ export default class Canvas {
    */
   _createCamera(){
 
-		// this.camera = new THREE.PerspectiveCamera(45, 1, 1, 20000);
+		this.camera = new Camera(45, 1, 1, 20000);
 
+		window.console.log(this.camera);
+		
   }
 
   /**
@@ -50,16 +64,21 @@ export default class Canvas {
    */
   _createRenderer(){
 
-	@renderer = new THREE.WebGLRenderer({
-			canvas             : document.getElementById(@el().attr('id'))
-			alpha              : false
-			antialias          : false
-			stencil            : false
-			depth              : true
-			premultipliedAlpha : false
-		})
-	@renderer.autoClear = true
-	@renderer.setClearColor(0xffffff)
+		this.renderer = new THREE.WebGLRenderer({antialias: true});
+
+    // this.renderer = new THREE.WebGLRenderer({
+    //   canvas             : document.getElementById(this.el().attr('id'));
+    //   alpha              : false;
+    //   antialias          : false;
+    //   stencil            : false;
+    //   depth              : true;
+    //   premultipliedAlpha : false;
+    // });
+		//
+    this.renderer.autoClear = true;
+    this.renderer.setClearColor(0xffffff);
+
+		document.getElementById("WebGL-output").appendChild(this.renderer.domElement);
 
   }
 
@@ -68,7 +87,27 @@ export default class Canvas {
    */
   _createScene(){
 
+		this.scene = new THREE.Scene();
+
   }
+
+	/**
+	 *　Object作成
+	 */
+	_createObject(){
+
+	  var cubeGeometry = new THREE.BoxGeometry(4, 4, 4);
+	  var cubeMaterial = new THREE.MeshBasicMaterial({
+	    color: 0xff0000,
+      wireframe: false
+    });
+
+    this.cube = new THREE.Mesh(cubeGeometry, cubeMaterial);
+    this.cube.position.x = -4;
+    this.cube.position.y = 3;
+    this.cube.position.z = 0;
+
+	}
 
 
   onLoad(){
