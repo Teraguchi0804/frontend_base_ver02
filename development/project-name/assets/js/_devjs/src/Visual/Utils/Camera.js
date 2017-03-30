@@ -1,21 +1,68 @@
 /**
  * fileOverview:
  * Project:
- * File: Top
+ * File: Camera
  * Date:
  * Author:
  */
 
-import Common from './Page/Common.js';
-import Main from './Page/Main.js';
+'use strict';
 
-(()=>{
+export default class Camera {
 
-  // globalオブジェクト
-  if (window.gb===undefined) window.gb = {};
-  window.gb.in = {}; //instance
+	constructor() {
 
-  gb.in.common = new Common();
-  gb.in.main = new Main();
+		this.camera = null;
+		this.renderer = null;
+		this.scene = null;
 
-})();
+		this.createCamera = this._createCamera.bind(this);
+		this.createRenderer = this._createRenderer.bind(this);
+		this.createScene = this._createScene.bind(this);
+
+	}
+
+	/**
+	 * 初期化
+	 */
+	init(){
+
+		this.createCamera();
+		this.createRenderer();
+		this.createScene();
+
+	}
+
+	/**
+	 * カメラ作成
+	 */
+	_createCamera(){
+
+	}
+
+	/**
+	 * レンダラー作成
+	 */
+	_createRenderer(){
+
+	}
+
+	/**
+	 *　シーン作成
+	 */
+	_createScene(){
+
+	}
+
+
+	onLoad(){
+
+	}
+
+	setEvents() {
+
+		$(window).on('load', this.onLoad.bind(this));
+
+	}
+
+}

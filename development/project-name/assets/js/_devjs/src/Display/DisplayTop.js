@@ -73,8 +73,8 @@ export default class DisplayTop {
     // ------------------------------------------------------------
 
     // sp
-    gb.in.sliderTop.setEvents();
-    gb.in.snsSPHoverEf = new HoverEffectSNSSPFooter($('#sideL'));
+    // gb.in.sliderTop.setEvents();
+    // gb.in.snsSPHoverEf = new HoverEffectSNSSPFooter($('#sideL'));
 
     // pc
     this.ht = new HoverEffectSVGArrowTop($('.section01 .next'));
