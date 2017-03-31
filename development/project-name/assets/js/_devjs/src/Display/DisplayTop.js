@@ -34,14 +34,21 @@ export default class DisplayTop {
 
 
     // アニメーションループスタート
-    gb.in.up.loop();
+    // gb.in.up.loop();
     
   }
 
   onLoad() {
 
-    gb.in.canvas = new Canvas();
-		gb.in.canvas.init();
+    // gb.in.canvas = new Canvas();
+    // gb.in.canvas.init();
+
+    gb.in.canvas = new Canvas({
+      output: document.getElementById('webgl-output')
+    });
+
+    gb.in.canvas.init();
+
 
     // ------------------------------------------------------------
     //  UI / Layout
@@ -71,8 +78,8 @@ export default class DisplayTop {
     //  UI / Layout
     // ------------------------------------------------------------
     // sp
-    gb.in.scaleTop = new ScaleTop();
-    gb.in.pos = new Position();
+    // gb.in.scaleTop = new ScaleTop();
+    // gb.in.pos = new Position();
 
     // ------------------------------------------------------------
     //  Effects
@@ -83,12 +90,6 @@ export default class DisplayTop {
     // gb.in.snsSPHoverEf = new HoverEffectSNSSPFooter($('#sideL'));
 
     // pc
-    this.ht = new HoverEffectSVGArrowTop($('.section01 .next'));
-    this.ht.autoArrow();
-    gb.in.time = new TopTime();
-    if (gb.in.sec01Video.video) gb.in.sec01Video.video.playByNYTime(); // sp用にも gb.in.sec01Videoが存在するかどうか判定
-    if (gb.in.sec01Video.video) gb.in.sec01Video.video.setEvents(); // sp用にも gb.in.sec01Videoが存在するかどうか判定
-
 
   }
 

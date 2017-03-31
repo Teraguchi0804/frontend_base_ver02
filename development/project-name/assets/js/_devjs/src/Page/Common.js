@@ -57,13 +57,13 @@ export default class Common {
     gb.in.conf = new Conf();
     gb.in.u = new Util();
     gb.in.f = new Func();
-    gb.in.up = new UpdateMgr();
-    gb.in.r = new ResizeMgr();    
-    gb.in.s = new ScrollMgr();
-    gb.in.m = new MouseMgr();
-    gb.in.rm = new ReadyMgr();
-    gb.in.loadMgr = new LoadMgr();
-    gb.in.sct = new ScrollTransition();
+    // gb.in.up = new UpdateMgr();
+    // gb.in.r = new ResizeMgr();
+    // gb.in.s = new ScrollMgr();
+    // gb.in.m = new MouseMgr();
+    // gb.in.rm = new ReadyMgr();
+    // gb.in.loadMgr = new LoadMgr();
+    // gb.in.sct = new ScrollTransition();
 
     // ------------------------------------------------------------
     //
@@ -76,11 +76,11 @@ export default class Common {
     // ------------------------------------------------------------
     //  Layout
     // ------------------------------------------------------------
-    gb.in.Layout = new Layout();
+    // gb.in.Layout = new Layout();
 
 
     // 準備完了後の処理
-    gb.in.rm.onCompletedFunc = ()=>{new DisplayOpening();}
+    // gb.in.rm.onCompletedFunc = ()=>{new DisplayOpening();}
 
   }
 
@@ -91,12 +91,12 @@ export default class Common {
     //  スマホの向き判定
     //  ページ情報取得
     // ------------------------------------------------------------
-    gb.in.je = new JudgeEnvironment();
-    gb.in.resImg = new ResponsiveSwitchImg();
-    gb.in.sns = new Sns($('.fbShare'),$('.twShare'),$('.lineShare'),$('.onMail'))
-    gb.in.swt = new SwipeTransition();
+    // gb.in.je = new JudgeEnvironment();
+    // gb.in.resImg = new ResponsiveSwitchImg();
+    // gb.in.sns = new Sns($('.fbShare'),$('.twShare'),$('.lineShare'),$('.onMail'))
+    // gb.in.swt = new SwipeTransition();
 
-    gb.in.f.checkCssBlend();
+    // gb.in.f.checkCssBlend();
 
     // ------------------------------------------------------------
     //  UI
@@ -129,7 +129,7 @@ export default class Common {
     // logo 出す
     // TweenMax.to($('#header .logo'), 2.2, {opacity: 1, ease: Power2.easeInOut})
 
-    gb.in.loadMgr.start();
+    // gb.in.loadMgr.start();
 
   }
 
