@@ -61,9 +61,6 @@ export default class Canvas extends Entry{
    */
   _createCamera(){
 
-		// gb.in.camera = this.camera = new Camera(45, 1, 1, 20000);
-		// this.camera = new THREE.PerspectiveCamera(45, 1, 1, 20000);
-
     this.camera = new THREE.PerspectiveCamera(35, this.width / this.height, 10, 1000);
     this.camera.position.set(0, 0, 300);
     // this.camera.lookAt( this.scene.position );
