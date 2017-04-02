@@ -50,6 +50,7 @@ export default class Canvas extends Entry{
 
     this.Update();
 
+    //リサイズイベント発火
     window.addEventListener('resize', () => {
       this.onResize();
     }, false);
