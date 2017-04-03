@@ -109,9 +109,9 @@ export default class Canvas extends Entry{
     });
 
     this.cube = new THREE.Mesh(cubeGeometry, cubeMaterial);
-    this.cube.position.x = -4;
+    this.cube.position.x = 3;
     this.cube.position.y = 3;
-    this.cube.position.z = 0;
+    this.cube.position.z = 3;
 
     this.scene.add(this.cube);
 
