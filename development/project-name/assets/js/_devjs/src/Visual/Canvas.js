@@ -30,6 +30,7 @@ export default class Canvas extends Entry{
     this.createRenderer = this._createRenderer.bind(this);
     this.createScene = this._createScene.bind(this);
     this.createObject = this._createObject.bind(this);
+    this.orbitControls = this._orbitControls.bind(this);
 
     this.onResize = this._onResize.bind(this);
 
@@ -43,8 +44,10 @@ export default class Canvas extends Entry{
   init(){
 
     this.createCamera();
+		this.createScene();
     this.createRenderer();
-    this.createScene();
+
+		this.orbitControls();
 
 		this.createObject();
 
@@ -62,9 +65,13 @@ export default class Canvas extends Entry{
    */
   _createCamera(){
 
-    this.camera = new THREE.PerspectiveCamera(35, this.width / this.height, 10, 1000);
-    this.camera.position.set(0, 0, 300);
-    // this.camera.lookAt( this.scene.position );
+    this.camera = new THREE.PerspectiveCamera(45, this.width / this.height, 0.1, 1000);
+    this.camera.position.x = -30;
+    this.camera.position.y = 40;
+    this.camera.position.z = 30;
+    // window.console.log(this.scene.position);
+    // window.console.log(this.scene);
+    this.camera.lookAt(new THREE.Vector3(0,0,0));
 
   }
 
@@ -81,12 +88,16 @@ export default class Canvas extends Entry{
       premultipliedAlpha : false
 		});
 
-    this.renderer.setClearColor( 0xffffff );
+    this.renderer.setClearColor(0xffffff);
     this.renderer.setPixelRatio(window.devicePixelRatio || 1);
-    this.renderer.setSize( this.width, this.height );
+    this.renderer.setSize(this.width, this.height);
     this.output.appendChild(this.renderer.domElement);
 
+
+
   }
+
+
 
   /**
    *　シーン作成
@@ -102,10 +113,10 @@ export default class Canvas extends Entry{
 	 */
 	_createObject(){
 
-    var cubeGeometry = new THREE.BoxGeometry(50, 50, 50);
+    var cubeGeometry = new THREE.BoxGeometry(4, 4, 4);
     var cubeMaterial = new THREE.MeshBasicMaterial({
       color: 0x000000,
-      wireframe: false
+      wireframe: true
     });
 
     this.cube = new THREE.Mesh(cubeGeometry, cubeMaterial);
@@ -125,7 +136,7 @@ export default class Canvas extends Entry{
       this.Update();
     });
     // this.controls.update();
-    this.renderer.render( this.scene, this.camera );
+    this.renderer.render(this.scene, this.camera);
   }
 
   /**
@@ -137,7 +148,19 @@ export default class Canvas extends Entry{
     this.renderer.setSize(window.innerWidth, window.innerHeight);
   }
 
-  setEvents() {
+	/**
+   * カメラコントロール
+	 */
+	_orbitControls(){
+		this.controls = new THREE.OrbitControls(this.camera);
+		this.controls.autoRotate = true;
+		var clock = new THREE.Clock();
+
+		var delta = clock.getDelta();
+		this.controls.update(delta);
+  }
+
+	setEvents() {
 
     $(window).on('load', this.onLoad.bind(this));
 
