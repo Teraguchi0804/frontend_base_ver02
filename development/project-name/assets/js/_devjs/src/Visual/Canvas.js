@@ -93,8 +93,6 @@ export default class Canvas extends Entry{
     this.renderer.setSize(this.width, this.height);
     this.output.appendChild(this.renderer.domElement);
 
-
-
   }
 
 
