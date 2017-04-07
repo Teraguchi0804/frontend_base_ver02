@@ -1,21 +1,67 @@
 /**
  * fileOverview:
  * Project:
- * File: Top
+ * File: Scene
  * Date:
  * Author:
  */
 
-import Common from './Page/Common.js';
-import Main from './Page/Main.js';
+// window.THREE = require('three');
 
-(()=>{
+'use strict';
 
-  // globalオブジェクト
-  if (window.gb === undefined) window.gb = {};
-  window.gb.in = {}; //instance
+export default class Scene {
 
-  gb.in.common = new Common();
-  gb.in.main = new Main();
+  constructor() {
 
-})();
+    this.scene = null;
+
+    this.createCameraObject = this._createCameraObject.bind(this);
+
+    this.init();
+  }
+
+  /**
+   * 初期化
+   */
+  init(){
+
+    this.createCameraObject();
+
+  }
+
+  /**
+   * カメラオブジェクト作成
+   */
+  _createCameraObject(){
+
+    this.camera = new THREE.PerspectiveCamera(this.fov, this.aspect, this.near, this.far);
+
+  }
+
+  /**
+   * レンダラー作成
+   */
+  // _createRenderer(){
+  //
+  // }
+
+  /**
+   *　シーン作成
+   */
+  // _createScene(){
+  //
+  // }
+  //
+  //
+  // onLoad(){
+  //
+  // }
+  //
+  // setEvents() {
+  //
+  // 	$(window).on('load', this.onLoad.bind(this));
+  //
+  // }
+
+}
