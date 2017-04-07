@@ -69,8 +69,9 @@ export default class Canvas extends Entry{
     this.camera.position.x = -30;
     this.camera.position.y = 40;
     this.camera.position.z = 30;
+
     // window.console.log(this.scene.position);
-    // window.console.log(this.scene);
+
     this.camera.lookAt(new THREE.Vector3(0,0,0));
 
   }

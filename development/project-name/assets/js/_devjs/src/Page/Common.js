@@ -10,31 +10,31 @@ import Conf from '../Conf.js';
 import Util from '../MyLibs/Util.js';
 import Func from '../MyLibs/Func.js';
 
-import ReadyMgr from '../MyLibs/EventMgr/ReadyMgr.js';
-import UpdateMgr from '../MyLibs/EventMgr/UpdateMgr.js';
-import ResizeMgr from '../MyLibs/EventMgr/ResizeMgr.js';
-import ScrollMgr from '../MyLibs/EventMgr/ScrollMgr.js';
-import MouseMgr from '../MyLibs/EventMgr/MouseMgr.js';
-import LoadMgr from '../Func/LoadMgr.js';
+// import ReadyMgr from '../MyLibs/EventMgr/ReadyMgr.js';
+// import UpdateMgr from '../MyLibs/EventMgr/UpdateMgr.js';
+// import ResizeMgr from '../MyLibs/EventMgr/ResizeMgr.js';
+// import ScrollMgr from '../MyLibs/EventMgr/ScrollMgr.js';
+// import MouseMgr from '../MyLibs/EventMgr/MouseMgr.js';
+// import LoadMgr from '../Func/LoadMgr.js';
 
 // import Pjax from '../Func/Pjax.js';
-import JudgeEnvironment from '../Func/JudgeEnvironment.js';
-import ResponsiveSwitchImg from '../Func/_events/ResponsiveSwitchImg.js';
-import SwipeTransition from '../Func/SwipeTransition.js';
+// import JudgeEnvironment from '../Func/JudgeEnvironment.js';
+// import ResponsiveSwitchImg from '../Func/_events/ResponsiveSwitchImg.js';
+// import SwipeTransition from '../Func/SwipeTransition.js';
 
 // import Menu from '../Display/UI/_compornents/Menu.js';
 // import Nav from '../Display/UI/Nav.js';
 // import Alert from '../Display/UI/Alert.js';
 // import SideR from '../Display/UI/SideR.js';
 // import Time from '../Func/Time.js';
-import ScrollTransition from '../Func/ScrollTransition.js';
+// import ScrollTransition from '../Func/ScrollTransition.js';
 // import PageTop from '../Display/UI/_parts/PageTop.js';
 // import Sec01Video from '../Display/UI/Sec01Video.js';
-import Sns from '../Func/Sns.js';
+// import Sns from '../Func/Sns.js';
 // import SliderTop from '../Display/UI/SliderTop.js';
 
 
-import Layout from '../Display/Layout/Layout.js';
+// import Layout from '../Display/Layout/Layout.js';
 
 'use strict';
 
