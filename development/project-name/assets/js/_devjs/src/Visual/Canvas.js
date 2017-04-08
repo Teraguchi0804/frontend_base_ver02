@@ -95,9 +95,7 @@ export default class Canvas extends Entry{
     this.output.appendChild(this.renderer.domElement);
 
   }
-
-
-
+	
   /**
    *　シーン作成
    */
