@@ -70,8 +70,6 @@ export default class Canvas extends Entry{
     this.camera.position.y = 40;
     this.camera.position.z = 30;
 
-    // window.console.log(this.scene.position);
-
     this.camera.lookAt(new THREE.Vector3(0,0,0));
 
   }
@@ -95,7 +93,7 @@ export default class Canvas extends Entry{
     this.output.appendChild(this.renderer.domElement);
 
   }
-	
+
   /**
    *　シーン作成
    */
