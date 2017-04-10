@@ -32,16 +32,12 @@ export default class DisplayTop {
 
   onImmediate() {
 
-
     // アニメーションループスタート
     // gb.in.up.loop();
     
   }
 
   onLoad() {
-
-    // gb.in.canvas = new Canvas();
-    // gb.in.canvas.init();
 
     gb.in.canvas = new Canvas({
       output: document.getElementById('webgl-output')
