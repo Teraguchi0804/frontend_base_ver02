@@ -46,46 +46,11 @@ export default class DisplayTop {
     gb.in.canvas.init();
 
 
-    // ------------------------------------------------------------
-    //  UI / Layout
-    // ------------------------------------------------------------
-    // sp
-    // gb.in.scaleTop = new ScaleTop();
-    // gb.in.pos = new Position();
-
-    // ------------------------------------------------------------
-    //  Effects
-    // ------------------------------------------------------------
-
-    // sp
-    // gb.in.sliderTop.setEvents();
-    // gb.in.snsSPHoverEf = new HoverEffectSNSSPFooter($('#sideL'));
-
-    // pc
-    // new HoverEffectSVGArrowTop($('.section01 .next')); // → TopOpeningへ
-
   }
 
   static run() {
 
 		// window.console.log('static_Run');
-
-    // ------------------------------------------------------------
-    //  UI / Layout
-    // ------------------------------------------------------------
-    // sp
-    // gb.in.scaleTop = new ScaleTop();
-    // gb.in.pos = new Position();
-
-    // ------------------------------------------------------------
-    //  Effects
-    // ------------------------------------------------------------
-
-    // sp
-    // gb.in.sliderTop.setEvents();
-    // gb.in.snsSPHoverEf = new HoverEffectSNSSPFooter($('#sideL'));
-
-    // pc
 
   }
 
