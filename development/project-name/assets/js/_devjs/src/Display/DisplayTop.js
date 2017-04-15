@@ -5,10 +5,6 @@
 //--------------------------------------------------
 // import Effects from './Effects/Effects.js';
 // import ScaleTop from '../Display/Layout/Size/ScaleTop.js';
-// import HoverEffectSNSSPFooter from '../Display/Effects/03_effects/HoverEffectSNSSPFooter.js';
-// import HoverEffectSVGArrowTop from '../Display/Effects/03_effects/HoverEffectSVGArrowTop.js';
-// import TopTime from '../Display/UI/TopTime.js';
-// import Position from './Layout/Postion/Position.js';
 
 // import WebGLinit from './WebGLinit.js';
 
