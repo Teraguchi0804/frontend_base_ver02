@@ -6,7 +6,6 @@
  * Author:
  */
 
-// window.THREE = require('three');
 
 'use strict';
 
